@@ -98,7 +98,19 @@ $faq = [
 
             <!-- | FOOTER | -->
             <footer>
-                
+                <div class="container">
+                    <nav class="footer_nav">
+                        <ul>
+                            <li v-for="element in footerNav"><a href="#">{{element}}</a></li>
+                        </ul>
+                    </nav>
+                    <div class="language">
+                        <img src="img/index.png" alt="language">
+                        <select>
+                            <option value="ita">Italiano</option>
+                        </select>
+                    </div>
+                </div>
             </footer>
     </div>
 

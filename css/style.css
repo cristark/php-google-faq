@@ -25,13 +25,15 @@ i {
   color: #5f6368;
 }
 
-header ul {
+header ul,
+footer ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-header li {
+header li,
+footer li {
   display: inline-block;
 }
 
@@ -127,4 +129,55 @@ main a {
 
 main ul {
   list-style-type: lower-alpha;
+}
+
+/* | FOOTER | */
+footer {
+  background: #f5f5f5;
+  padding: 10px 0;
+}
+
+footer .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li a {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+
+footer ul li {
+  position: relative;
+  margin-right: 15px;
+}
+
+footer ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1.5px;
+  height: 1.5px;
+  background: #b4b4b4;
+  border-radius: 50%;
+  margin: 0 5px;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  transform: translateY(50%);
+}
+
+footer .language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .language select {
+  width: 200px;
+}
+
+footer .language img {
+  margin-right: 10px;
 }
