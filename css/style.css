@@ -8,6 +8,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  color: #3c4043;
+  font-size: 1.5em;
+  margin-top: 80px;
+}
+
 h2 {
   font-size: 1.3em;
   font-weight: 400;
@@ -35,14 +41,14 @@ a {
   font-weight: 600;
 }
 
-.divider {
-  background: #b4b4b4;
-  height: 1px;
-}
-
 /* | HEADER | */
 header {
+  width: 100%;
   padding: 0 20px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 0.5px solid #b4b4b4;
 }
 
 .top_header,
@@ -61,6 +67,7 @@ header {
   height: 25px;
   margin-right: 5px;
   margin-top: 3px;
+  cursor: pointer;
 }
 
 .top_header .buttons .menu {
@@ -68,6 +75,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .top_header .buttons .menu .point {
@@ -81,6 +89,7 @@ header {
 .top_header .buttons img {
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .main_nav ul li {
@@ -97,6 +106,25 @@ header {
 }
 
 /* | MAIN | */
+.container {
+  width: 950px;
+  margin: 200px auto 0;
+}
+
+main p,
+main ul li,
+main ol li {
+  font-size: 0.9em;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.87);
+}
+
 main a {
   color: #3367d6;
+  font-weight: normal;
+}
+
+main ul {
+  list-style-type: lower-alpha;
 }

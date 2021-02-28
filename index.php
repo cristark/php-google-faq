@@ -60,7 +60,7 @@ $faq = [
     <!-- Link Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- Link foglio di stile -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="app">
@@ -86,16 +86,20 @@ $faq = [
                 </nav>
             </header>
         
-            <section class="divider"></section>
-        
             <!-- | MAIN | -->
             <main>
-        
-                <?php foreach ($faq as $element) { ?>
-                    <h1><?php echo $element['title'] ?></h1>
-                    <p><?php echo $element['text'] ?></p>
-                <?php } ?>
+                <div class="container">
+                    <?php foreach ($faq as $element) { ?>
+                        <h1> <?php echo $element['title'] ?></h1>
+                        <p> <?php echo $element['text'] ?></p>
+                    <?php } ?>
+                </div>
             </main>
+
+            <!-- | FOOTER | -->
+            <footer>
+                
+            </footer>
     </div>
 
     <!-- Link Script Javascript -->
